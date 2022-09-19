@@ -7,6 +7,6 @@ const mapObj = new Map([
   ["c", 3],
 ]);
 
-console.log(...a3); // 1 2
-console.log([...a3, ...[3, 4]]); // [1, 2, 3, 4]
-console.log([...a3, ...arr, ...set, ...mapObj.keys()]); // [1, 2, 1, 2, 3, 1, 2, 3, 'a', 'b', 'c']
+// console.log(...a3); // 1 2
+// console.log([...a3, ...[3, 4]]); // [1, 2, 3, 4]
+// console.log([...a3, ...arr, ...set, ...mapObj.keys()]); // [1, 2, 1, 2, 3, 1, 2, 3, 'a', 'b', 'c']

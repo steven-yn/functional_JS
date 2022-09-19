@@ -24,10 +24,10 @@ const iterable = {
 
 let iterator = iterable[Symbol.iterator]();
 
-console.log(iterator.next()); // {value: 3, done: false}
-console.log(iterator.next()); // {value: 2, done: false}
-console.log(iterator.next()); // {value: 1, done: false}
-console.log(iterator.next()); // {done: true}
+// console.log(iterator.next()); // {value: 3, done: false}
+// console.log(iterator.next()); // {value: 2, done: false}
+// console.log(iterator.next()); // {value: 1, done: false}
+// console.log(iterator.next()); // {done: true}
 
 // 이터러블도 순회가 되고, 이터레이터도 순회가 되고
 // 일정부분 진행한 후에 실행해도 순회가 되도록 하는것이 잘 만든 이터레이터이다.
@@ -44,19 +44,19 @@ let iter1 = arr1[Symbol.iterator]();
 
 // 이터러블의 이터레이터를 실행했을때, 자기 자신을 가지고 있을때
 // well formed iterator, well formed iterable 이라고 할수있다.
-console.log(iter1[Symbol.iterator]() === iter1); // true
+// console.log(iter1[Symbol.iterator]() === iter1); // true
 
 iter1.next();
 for (const b of iter1) console.log(b); // 2 3
 
-console.log(document.querySelectorAll("*")); // NodeList(n)[html,head,body...]
+// console.log(document.querySelectorAll("*")); // NodeList(n)[html,head,body...]
 
 const all = document.querySelectorAll("*");
 
 for (const c of all) console.log(c); // <html> <head> <body> ...
-console.log(all[Symbol.iterator]()); // Array iterator{}
+// console.log(all[Symbol.iterator]()); // Array iterator{}
 
 let iter2 = all[Symbol.iterator]();
-console.log(iter2.next()); // {value : html, done: false}
-console.log(iter2.next()); // {value : head, done: false}
-console.log(iter2.next()); // {value : body, done: false}
+// console.log(iter2.next()); // {value : html, done: false}
+// console.log(iter2.next()); // {value : head, done: false}
+// console.log(iter2.next()); // {value : body, done: false}

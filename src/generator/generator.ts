@@ -16,10 +16,10 @@ function* gen1() {
 
 let iter = gen1();
 
-console.log(iter.next()); // {value: 1, done: false}
-console.log(iter.next()); // {value: 3, done: false}
-console.log(iter.next()); // {value: 100, done: true}
-console.log(iter.next()); // {value: 100, done: true}
+// console.log(iter.next()); // {value: 1, done: false}
+// console.log(iter.next()); // {value: 3, done: false}
+// console.log(iter.next()); // {value: 100, done: true}
+// console.log(iter.next()); // {value: 100, done: true}
 
 // 제너레이터 실행결과는 이터러블
 for (const a of gen1()) console.log(a); // 1 3

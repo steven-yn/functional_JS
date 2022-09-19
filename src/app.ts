@@ -1,5 +1,6 @@
 import net from "net";
 import { ArrayFn, MapFn, SetFn } from "./iterable_iterator/iterable_iterator";
+import { reduceDefault, reduce_1, reduce_2, reduce_3 } from "./reduce/reduce";
 
 const server = net.createServer((socket) => {
   console.log("connected.");
@@ -11,9 +12,11 @@ const server = net.createServer((socket) => {
     console.log("client disconnted.");
   });
 
-  ArrayFn();
-  SetFn();
-  MapFn();
+  // reduce_1();
+
+  // reduceDefault();
+  // reduce_2();
+  reduce_3();
 
   const content = `
   `;

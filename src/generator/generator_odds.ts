@@ -17,11 +17,11 @@ function* odds(limitNum: number) {
 
 let oddsIter = odds(10);
 
-console.log(oddsIter.next()); // {value: 1, done: false}
-console.log(oddsIter.next()); // {value: 3, done: false}
-console.log(oddsIter.next()); // {value: 5, done: false}
-console.log(oddsIter.next()); // {value: 7, done: false}
-console.log(oddsIter.next()); // {value: 9, done: false}
-console.log(oddsIter.next()); // {value: undefined, done: true}
+// console.log(oddsIter.next()); // {value: 1, done: false}
+// console.log(oddsIter.next()); // {value: 3, done: false}
+// console.log(oddsIter.next()); // {value: 5, done: false}
+// console.log(oddsIter.next()); // {value: 7, done: false}
+// console.log(oddsIter.next()); // {value: 9, done: false}
+// console.log(oddsIter.next()); // {value: undefined, done: true}
 
 for (const idx of odds(40)) console.log(idx); // 1 3 5 7 9 ... 39
