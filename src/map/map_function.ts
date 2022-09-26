@@ -1,4 +1,4 @@
-const products = [
+const products_1 = [
   { name: "반팔티", price: 15000 },
   { name: "긴팔티", price: 20000 },
   { name: "핸드폰케이스", price: 15000 },
@@ -7,13 +7,13 @@ const products = [
 ];
 
 let names = [];
-for (const n of products) {
+for (const n of products_1) {
   names.push(n.name);
 }
 // console.log(names); // ['반팔티', '긴팔티' '핸드폰케이스', '후드티', '바지']
 
 let prices = [];
-for (const p of products) {
+for (const p of products_1) {
   prices.push(p.price);
 }
 // console.log(prices); // [15000, 20000, 15000, 30000, 25000]
@@ -23,7 +23,7 @@ for (const p of products) {
 // 함수의 리턴값을 받아서 사용해야한다.
 // 함수형 프로그래밍 에서는 함수가 인자와 리턴값으로 소통하는것을 권장한다.
 
-const map = (f: (argu: any) => any, iter: Iterable<any>) => {
+const map_1 = (f: (argu: any) => any, iter: Iterable<any>) => {
   let res = [];
 
   // map 함수는 이 부분을 추상화 한다.

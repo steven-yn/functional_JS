@@ -6,7 +6,7 @@ const products2 = [
   { name: "바지", price: 25000 },
 ];
 
-const filter = (f: (argu: any) => boolean | number, iter: Iterable<any>) => {
+const filter_1 = (f: (argu: any) => boolean | number, iter: Iterable<any>) => {
   let res = [];
   for (const a of iter) {
     if (f(a)) res.push(a);
