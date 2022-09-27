@@ -1,5 +1,6 @@
 import net from "net";
 import { MFR_test1 } from "./expert/map_filter_reduce";
+import { go_pipe } from "./go/go_pipe";
 import { ArrayFn, MapFn, SetFn } from "./iterable_iterator/iterable_iterator";
 import { reduceDefault, reduce_1, reduce_2, reduce_3 } from "./reduce/reduce";
 import { reduce_4 } from "./reduce/reduce_2";
@@ -14,7 +15,7 @@ const server = net.createServer((socket) => {
     console.log("client disconnted.");
   });
 
-  MFR_test1();
+  go_pipe();
 
   const content = `
   `;
