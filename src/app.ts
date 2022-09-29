@@ -21,11 +21,10 @@ const server = net.createServer((socket) => {
   `;
 
   const resBody = `<html lang="ko"> <head><meta charset="UTF-8"></head> <body>${content}</body> </html>`;
-
   socket.write(
     [
       "HTTP/1.1 200 OK",
-      `Content-Type: text/html;charset=UTF-8
+      `Content-Type: text/html; charset=utf-8
       Content-Length: ${resBody.length}`,
       "\n",
       `${resBody}`,

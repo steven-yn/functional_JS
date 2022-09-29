@@ -81,6 +81,7 @@ export function go_pipe() {
     log,
   ]); // 111
 
+  // 이와 같이 사용하고 싶은 것 이다.
   const fn_2 = pipe(
     (val1, val2) => val1 + val2,
     (a: number) => a + 10,
